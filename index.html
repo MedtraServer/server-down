@@ -24,21 +24,22 @@
             <li>Colar o link no campo abaixo</li>
             
         </ol>
-        
+       
         <form class="row">
             <div class="col-10">
                 <label for="staticEmail2" class="visually-hidden">Link</label>
-                <input type="text" id="link" class="form-control">
+                <input type="text" id="link" class="form-control" style="border:1px solid red">
 
             </div>
             <div class="col-auto">
                 <button type="button" id="copy_link" class="btn btn-primary mb-3">Gerar Link e Copiar</button>
             </div>
         </form>
-        <pre><code id="step2" class="language-bash">coolar no link no campo acima</code></pre>
+        <pre><code id="step6" class="language-bash">su</code></pre>
+        <pre><code id="step2" class="language-bash">colar no link no campo acima</code></pre>
         <p>Após copiar link apenas colar no terminal linux e aguardar</p>
         <hr>
-        <pre><code id="step5" class="language-bash">docker exec -it postgres_db_9_6 psql -U postgres -d medtra -c "SELECT nomae FROM funcionario limit 10;"</code></pre>
+        <pre><code id="step5" class="language-bash">docker exec -it postgres_db_9_6 psql -U postgres -d medtra -c "SELECT nome FROM funcionario limit 10;"</code></pre>
         
         <hr>
         <h1>TROCA DE PORTA DO DECO</h1>
@@ -150,12 +151,15 @@
         const step3 = document.getElementById('step3');
         const step4 = document.getElementById('step4');
         const step5 = document.getElementById('step5');
+        const step6 = document.getElementById('step6');
+        
+        
         Prism.highlightElement(blocoCodigo);
         Prism.highlightElement(step1_linux);
         Prism.highlightElement(step3);
         Prism.highlightElement(step4);
         Prism.highlightElement(step5);
-        
+        Prism.highlightElement(step6);
 
 
     </script>
