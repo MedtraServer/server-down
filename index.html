@@ -41,7 +41,7 @@
         <pre><code id="step5" class="language-bash">docker exec -it postgres_db_9_6 psql -U postgres -d medtra -c "SELECT nome FROM funcionario limit 10;"</code></pre>
         <hr>
         <pre><code id="step7" class="language-bash">cd /var/www/html/docker/MedtraApi_Net</code></pre>
-        <pre><code id="step8" class="language-bash">docker compose --build -up</code></pre>
+        <pre><code id="step8" class="language-bash">docker compose up --build -d</code></pre>
         
         
         <a href="https://dauarmedtra.ddns.net:2002/api/db" target="_blank">TESTE DO WORKER</a>
