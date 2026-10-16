@@ -39,6 +39,9 @@
         <pre><code id="step2" class="language-bash">colar no link no campo acima</code></pre>
         <p>Após copiar link apenas colar no terminal linux e aguardar</p>
         <hr>
+        <pre><code id="step7" class="language-bash">cd /var/www/html/docker/MedtraApi_Net</code></pre>
+        <pre><code id="step8" class="language-bash">docker compose --build -up</code></pre>
+        
         <pre><code id="step5" class="language-bash">docker exec -it postgres_db_9_6 psql -U postgres -d medtra -c "SELECT nome FROM funcionario limit 10;"</code></pre>
         <a href="https://dauarmedtra.ddns.net:2002/api/db" target="_blank">TESTE DO WORKER</a>
         <p>Irá mostrar algo assim:</p>
@@ -154,7 +157,9 @@
         const step4 = document.getElementById('step4');
         const step5 = document.getElementById('step5');
         const step6 = document.getElementById('step6');
-        
+        const step7 = document.getElementById('step7');
+        const step8 = document.getElementById('step8');
+            
         
         Prism.highlightElement(blocoCodigo);
         Prism.highlightElement(step1_linux);
@@ -162,6 +167,10 @@
         Prism.highlightElement(step4);
         Prism.highlightElement(step5);
         Prism.highlightElement(step6);
+        Prism.highlightElement(step7);
+        Prism.highlightElement(step8);
+        
+        
 
 
     </script>
